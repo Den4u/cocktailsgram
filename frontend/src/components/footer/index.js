@@ -4,7 +4,7 @@ import { Container, LinkComponent } from '../index'
 const Footer = () => {
   return <footer className={styles.footer}>
       <Container className={styles.footer__container}>
-        <LinkComponent href='#' title='CocktailsGram' className={styles.footer__brand} />
+        <LinkComponent href='#' title='© 2024 CocktailsGram' className={styles.footer__brand} />
       </Container>
   </footer>
 }

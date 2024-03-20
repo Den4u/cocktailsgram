@@ -55,7 +55,7 @@ const SingleCard = ({ loadItem, updateOrders }) => {
     <Container>
       <MetaTags>
         <title>{name}</title>
-        <meta name="description" content={`Продуктовый помощник - ${name}`} />
+        <meta name="description" content={`CocktailsGram - ${name}`} />
         <meta property="og:title" content={name} />
       </MetaTags>
       <div className={styles['single-card']}>

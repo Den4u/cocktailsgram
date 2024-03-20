@@ -37,7 +37,7 @@ const Cart = ({ updateOrders, orders }) => {
     <Container className={styles.container}>
       <MetaTags>
         <title>Список покупок</title>
-        <meta name="description" content="Продуктовый помощник - Список покупок" />
+        <meta name="description" content="CocktailsGram - Список покупок" />
         <meta property="og:title" content="Список покупок" />
       </MetaTags>
       <div className={styles.cart}>

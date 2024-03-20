@@ -64,7 +64,7 @@ const RecipeCreate = ({ onEdit }) => {
     <Container>
       <MetaTags>
         <title>Создание рецепта</title>
-        <meta name="description" content="Продуктовый помощник - Создание рецепта" />
+        <meta name="description" content="CocktailsGram - Создание рецепта коктейля" />
         <meta property="og:title" content="Создание рецепта" />
       </MetaTags>
       <Title title='Создание рецепта' />
