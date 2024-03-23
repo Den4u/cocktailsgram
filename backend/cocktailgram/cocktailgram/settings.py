@@ -126,7 +126,19 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 # EMAIL_USE_SSL = True
 
 # EMAIL_HOST_USER = os.getenv('EMAIL')
-# EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD')
+# EMAIL_HOST_PASSWORD = os.getenv('EMAIL_HOST_PASSWORD')
+
+EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
+EMAIL_HOST = "smtp.yandex.ru"
+EMAIL_PORT = 465
+EMAIL_USE_SSL = True
+
+EMAIL_HOST_USER = "den4uuu@yandex.ru"
+EMAIL_HOST_PASSWORD = "beqpoaoohbdigkvp"
+
+DEFAULT_FROM_EMAIL = EMAIL_HOST_USER
+SERVER_EMAIL = EMAIL_HOST_USER
+EMAIL_ADMIN = EMAIL_HOST_USER
 
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
@@ -141,7 +153,7 @@ REST_FRAMEWORK = {
 }
 
 DJOSER = {
-    # 'SEND_CONFIRMATION_EMAIL': True,
+    'SEND_CONFIRMATION_EMAIL': True,
 
     'HIDE_USERS': False,
 
