@@ -117,7 +117,7 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v3
     - name: Copy docker-compose.yml via ssh
-      uses: appleboy/ssh-action@master
+      uses: appleboy/ssh-action@v0.1.4
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
@@ -127,7 +127,7 @@ jobs:
         source: "docker-compose.production.yml"
         target: "cocktailgram"
     - name: Executing remote ssh commands to deploy
-      uses: appleboy/ssh-action@master
+      uses: appleboy/ssh-action@v0.1.4
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
