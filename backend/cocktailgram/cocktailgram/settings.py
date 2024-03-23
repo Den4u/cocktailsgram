@@ -120,6 +120,14 @@ MEDIA_ROOT = '/media/'
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 
+# EMAIL_BACKEND = os.getenv('EMAIL_BACKEND')
+# EMAIL_HOST = os.getenv('EMAIL_HOST')
+# EMAIL_PORT = os.getenv('EMAIL_PORT')
+# EMAIL_USE_SSL = True
+
+# EMAIL_HOST_USER = os.getenv('EMAIL')
+# EMAIL_HOST_PASSWORD = os.getenv('EMAIL_PASSWORD')
+
 REST_FRAMEWORK = {
     'DEFAULT_PERMISSION_CLASSES': [
         'rest_framework.permissions.AllowAny',
@@ -133,7 +141,10 @@ REST_FRAMEWORK = {
 }
 
 DJOSER = {
+    # 'SEND_CONFIRMATION_EMAIL': True,
+
     'HIDE_USERS': False,
+
     'PERMISSIONS': {
         'user': ['rest_framework.permissions.AllowAny'],
         'user_list': ['rest_framework.permissions.AllowAny'],
