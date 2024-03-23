@@ -117,23 +117,23 @@ jobs:
     - name: Checkout repo
       uses: actions/checkout@v3
     - name: Copy docker-compose.yml via ssh
-      uses: appleboy/ssh-action@v0.1.4
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
-        password: ${{ secrets.HOST_PASSWORD }}
+        # password: ${{ secrets.HOST_PASSWORD }}
         passphrase: ${{ secrets.SSH_PASSPHRASE }}
         source: "docker-compose.production.yml"
         target: "cocktailgram"
     - name: Executing remote ssh commands to deploy
-      uses: appleboy/ssh-action@v0.1.4
+      uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         passphrase: ${{ secrets.SSH_PASSPHRASE }}
-        password: ${{ secrets.HOST_PASSWORD }}
+        # password: ${{ secrets.HOST_PASSWORD }}
         script: |
           cd cocktailgram
           sudo docker compose -f docker-compose.production.yml pull
