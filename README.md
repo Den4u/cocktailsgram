@@ -25,7 +25,7 @@
 ![Nginx](https://img.shields.io/badge/nginx-%23009639.svg?style=for-the-badge&logo=nginx&logoColor=white)
 
 ## Запуск проекта на удалённом сервере: 
-
+ 
 1. Подключение к удалённому серверу: 
 ```  
 ssh -i путь_до_файла_с_SSH_ключом/название_файла_с_SSH_ключом имя_пользователя@ip_адрес_сервера  
