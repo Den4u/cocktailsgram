@@ -12,7 +12,7 @@
 подключено SPA к бэкенду на Django через API; <br />
 созданы образы и запущены контейнеры Docker; <br />
 созданы, развёрнуты и запущены на сервере мультиконтейнерные приложения; <br />
-закреплены на практике основы DevOps, включая CI&CD. <br />
+CI&CD. <br />
 
 ### Инструменты и стек технологий: <br /> 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
