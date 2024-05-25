@@ -1,18 +1,18 @@
-## CocktailsGram_Project
+## CocktailsGram_Project - Твой проводник в мир классики!
  
 ### Автор: https://github.com/Den4u 
 
 ### Проект доступен по домену: https://CocktailsGram.ddns.net/
 
-### CocktailsGram - сайт, на котором пользователи публикуют рецепты классических коктейлей (есть возможность добавлять рецепты в избранное и подписываться на публикации других авторов). Пользователям сайта доступен сервис «Список покупок» (доступен для скачивания в формате PDF).
+### Cocktailsgram - сайт для публикации рецептов классических и авторских коктейлей (добавление рецептов в избранное и возможность подписки на публикации других авторов). Пользователям сайта доступен сервис «Список покупок» (скачивание в формате PDF).
 
-### Выполненные задачи: 
-Настроено взаимодействие Python-приложения с внешними API-сервисами; <br />
-создан собственный API-сервис на базе проекта Django; <br />
-подключено SPA к бэкенду на Django через API; <br />
-созданы образы и запущены контейнеры Docker; <br />
-созданы, развёрнуты и запущены на сервере мультиконтейнерные приложения; <br />
-CI&CD. <br />
+### Выполненные задачи:
+Настроил взаимодействие Python-приложения с внешними API-сервисами; <br />
+создал собственный API-сервис на базе проекта Django; <br />
+реализовал систему регистрации и авторизации, фильтрацию по тегам, пагинацию; <br />
+подключил SPA к бэкенду на Django через API; <br />
+Проект упаковал в Docker-контейнеры, настроил CI/CD (GitHub Actions), развернул на сервере Ubuntu(22.04). <br />
+
 
 ### Инструменты и стек технологий: <br /> 
 ![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)
@@ -52,12 +52,12 @@ curl -fSL https://get.docker.com -o get-docker.sh
 sudo sh ./get-docker.sh 
 sudo apt install docker-compose-plugin 
 ``` 
-5. Скопируйте на сервер в директорию foodgram/ файл docker-compose.production.yml: 
+5. Скопируйте на сервер в директорию cocktailgram/ файл docker-compose.production.yml: 
 ``` 
 scp -i path_to_SSH/SSH_name docker-compose.production.yml \ 
-    username@server_ip:/home/username/foodgram/docker-compose.production.yml 
+    username@server_ip:/home/username/cocktailsgram/docker-compose.production.yml 
 ``` 
-6. Cоздать файл .env (в директории /foodgram), содержащий пары ключ-значение всех переменных окружения. 
+6. Cоздать файл .env (в директории /cocktailsgram), содержащий пары ключ-значение всех переменных окружения. 
 ```  
 POSTGRES_USER=*** <br /> 
 POSTGRES_PASSWORD=*** <br /> 
@@ -93,7 +93,6 @@ sudo docker-compose exec backend python manage.py import_csv /path_to_csv_file/i
 ``` 
 https://your_domen/ 
 ``` 
-12. Приятного отдыха! 
  
 ## Автоматический деплой проекта на сервер. 
 Для автоматического деплоя проекта на сервер с помощью GitHub actions необходимо добавить SECRETS в свой репозиторий: 
