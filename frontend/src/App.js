@@ -1,7 +1,8 @@
 import logo from './logo.svg';
 import './App.css';
+import React, { useState, useEffect, Component } from 'react';
+import background from "./image.png";
 import { Switch, Route, useHistory, Redirect, useLocation } from 'react-router-dom'
-import React, { useState, useEffect } from 'react'
 import { Header, Footer, ProtectedRoute } from './components'
 import api from './api'
 import styles from './styles.module.css'
@@ -23,6 +24,23 @@ import {
 } from './pages'
 
 import { AuthContext, UserContext } from './contexts'
+
+calss App extends Component {
+  render() {
+    const myStyle = {
+      backgroundImage: 'url(${background}',
+      height: "100vh",
+      marginTop: "-70px",
+      fontSize: "50px",
+      backgroundSize: "cover",
+      backgroundRepeat: "no-repeat",
+    };
+    return (
+      <div style={myStyle}>
+      </div>
+    )
+  }
+}
 
 function App() {
   const [ loggedIn, setLoggedIn ] = useState(null)
