@@ -50,6 +50,7 @@
 }
 html,
 body {
+  background-image: url('./images/image.png');
   font-family: Montserrat, Arial, sans-serif;
   min-height: 100%;
   padding: 0;
