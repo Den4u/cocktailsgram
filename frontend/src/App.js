@@ -25,7 +25,8 @@ import {
 
 import { AuthContext, UserContext } from './contexts'
 
-calss App extends Component {
+
+class App extends Component {
   render() {
     const myStyle = {
       backgroundImage: 'url(${background}',
@@ -38,7 +39,7 @@ calss App extends Component {
     return (
       <div style={myStyle}>
       </div>
-    )
+    );
   }
 }
 
