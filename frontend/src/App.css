@@ -51,7 +51,6 @@
 html,
 body {
   background-image: url('./images/image.png');
-  background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
   font-family: Montserrat, Arial, sans-serif;
