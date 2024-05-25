@@ -54,7 +54,7 @@ body {
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.85), transparent);
+  background-color: antiquewhite;
   font-family: Montserrat, Arial, sans-serif;
   min-height: 100%;
   padding: 30px;
