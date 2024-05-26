@@ -20,6 +20,7 @@
 
 .button:active {
   box-shadow: 0 0 7px #ddd;
+  color: #4A61DD;
 }
 
 .button_style_light {
