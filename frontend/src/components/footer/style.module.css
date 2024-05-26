@@ -1,5 +1,8 @@
 .footer {
-  background: #000000;
+  background-image: url('./img/image_footer.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 90px;
   flex: 0 0 auto;
 }
