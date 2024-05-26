@@ -8,7 +8,7 @@ export default [
     href: '/subscriptions',
     auth: true
   },{
-    title: 'Создать рецепт',
+    title: 'Создать что-то новое',
     href: '/recipes/create',
     auth: true
   },{
