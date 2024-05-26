@@ -3,7 +3,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 90px;
+  height: 161px;
   flex: 0 0 auto;
 }
 
@@ -13,7 +13,7 @@
     font-weight: 500;
     font-size: 16px;
     line-height: 20px;
-    color: #FFFFFF;
+    color: #000000;
 }
  
 .footer__container {
