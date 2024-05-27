@@ -20,27 +20,27 @@
 
 .button:active {
   box-shadow: 0 0 7px #ddd;
-  color: #4A61DD;
 }
 
 .button_style_light {
   border: 1px solid #DEE2F2;
-  background: #4A61DD;
+  background: #FFF;
+  color: #4A61DD;
 }
 
 .button_style_light:hover {
-  background: #4A61DD;
+  background: #D8DEFF;
   color: #4A61DD;
   border: 1px solid transparent;
 }
 
 .button_style_light-blue {
-  background: #4A61DD;
+  background: #F0F3FF;
   color: #4A61DD;
 }
 
 .button_style_light-blue:hover {
-  background: #4A61DD;
+  background: #D8DEFF;
   color: #4A61DD;
 }
 
