@@ -25,23 +25,22 @@
 
 .button_style_light {
   border: 1px solid #DEE2F2;
-  background: #FFF;
-  color: #4A61DD;
+  background: #4A61DD;
 }
 
 .button_style_light:hover {
-  background: #D8DEFF;
+  background: #4A61DD;
   color: #4A61DD;
   border: 1px solid transparent;
 }
 
 .button_style_light-blue {
-  background: #F0F3FF;
+  background: #4A61DD;
   color: #4A61DD;
 }
 
 .button_style_light-blue:hover {
-  background: #D8DEFF;
+  background: #4A61DD;
   color: #4A61DD;
 }
 
