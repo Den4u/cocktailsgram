@@ -1,4 +1,4 @@
-## CocktailsGram_Project - Твой проводник в мир классики!
+## CocktailsGram - Твой проводник в мир классики!
  
 ### Автор: https://github.com/Den4u 
 
