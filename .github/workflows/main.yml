@@ -123,8 +123,8 @@ jobs:
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
         password: ${{ secrets.ROOT_PASSWORD }}
-        source: "docker-compose.production.yml"
-        target: "cocktailgram"
+        source: "compose.yml"
+        target: "cocktailsgram"
     - name: Executing remote ssh commands to deploy
       uses: appleboy/ssh-action@master
       with:
@@ -133,11 +133,11 @@ jobs:
         key: ${{ secrets.SSH_KEY }}
         password: ${{ secrets.ROOT_PASSWORD }}
         script: |
-          cd devops/cocktailgram
-          sudo docker compose -f docker-compose.production.yml pull
-          sudo docker compose -f docker-compose.production.yml down
-          sudo docker compose -f docker-compose.production.yml up -d
-          sudo docker compose -f docker-compose.production.yml exec backend python manage.py migrate
-          sudo docker compose -f docker-compose.production.yml exec backend python manage.py collectstatic
-          sudo docker compose -f docker-compose.production.yml exec backend cp -r /app/collected_static/. /backend_static/static/
+          cd devops/cocktailsgram
+          sudo docker compose pull
+          sudo docker compose down
+          sudo docker compose up -d
+          sudo docker compose exec backend python manage.py migrate
+          sudo docker compose exec backend python manage.py collectstatic
+          sudo docker compose exec backend cp -r /app/collected_static/. /backend_static/static/
 
