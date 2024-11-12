@@ -122,7 +122,7 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
-        passphrase: ${{ secrets.SSH_PASSPHRASE }}
+        password: ${{ secrets.ROOT_PASSWORD }}
         source: "docker-compose.production.yml"
         target: "cocktailgram"
     - name: Executing remote ssh commands to deploy
@@ -131,9 +131,9 @@ jobs:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USER }}
         key: ${{ secrets.SSH_KEY }}
-        passphrase: ${{ secrets.SSH_PASSPHRASE }}
+        password: ${{ secrets.ROOT_PASSWORD }}
         script: |
-          cd cocktailgram
+          cd devops/cocktailgram
           sudo docker compose -f docker-compose.production.yml pull
           sudo docker compose -f docker-compose.production.yml down
           sudo docker compose -f docker-compose.production.yml up -d
